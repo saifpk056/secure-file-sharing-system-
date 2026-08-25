@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Secure File Sharing System</title>
+  <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+
+<aside>
+  <h2>🛡 Internee.pk</h2>
+
+  <a href="#dashboard">⌂ Dashboard</a>
+  <a href="#upload">⇧ Upload File</a>
+  <a href="#files">▣ My Files</a>
+  <a href="#share">♧ Shared Files</a>
+  <a href="#security">◷ Activity Logs</a>
+</aside>
+
+<main>
+
+<header>
+  <span>Secure File Sharing System</span>
+  <span>🟣 Saif Ullah ▾</span>
+</header>
+
+<section id="dashboard">
+
+  <div class="hero">
+    <div>
+      <h1>Secure File Sharing System</h1>
+
+      <p>
+        Secure file exchange between Internee.pk and external parties
+      </p>
+
+      <small>
+        End-to-End Encryption • Cloud Storage • Secure Access • Activity Logs
+      </small>
+    </div>
+
+    <b class="lock">🔒</b>
+  </div>
+
+  <div class="stats">
+
+    <div>
+      <b>4</b>
+      Total Files
+    </div>
+
+    <div>
+      <b>2</b>
+      Shared Files
+    </div>
+
+    <div>
+      <b>7</b>
+      Total Downloads
+    </div>
+
+    <div>
+      <b>100%</b>
+      Secure & Protected
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="upload">
+
+  <h1>Upload File</h1>
+
+  <p>
+    Select a file, encrypt it and upload securely.
+  </p>
+
+  <div class="card center">
+
+    <h2>📄 sample_report.pdf</h2>
+
+    <p>
+      2.45 MB • Ready to upload
+    </p>
+
+    <button onclick="upload()">
+      🔒 Encrypt & Upload
+    </button>
+
+    <p id="uploadStatus"></p>
+
+  </div>
+
+</section>
+
+
+<section id="files">
+
+  <h1>My Files</h1>
+
+  <p>
+    Uploaded and encrypted files.
+  </p>
+
+  <table>
+
+    <tr>
+      <th>File</th>
+      <th>Original</th>
+      <th>Size</th>
+      <th>Status</th>
+      <th>Action</th>
+    </tr>
+
+    <tbody id="rows"></tbody>
+
+  </table>
+
+</section>
+
+
+<section id="share">
+
+  <h1>Secure File Sharing</h1>
+
+  <div class="card">
+
+    <h2>Generate Secure Download Link</h2>
+
+    <p>
+      <b>sample_report.pdf.enc</b> • 2.45 MB
+    </p>
+
+    <label>Expiry Duration</label>
+
+    <select>
+      <option>1 hour</option>
+      <option>24 hours</option>
+    </select>
+
+    <label>
+      Password Protection (Optional)
+    </label>
+
+    <input
+      type="password"
+      placeholder="Enter optional password"
+    >
+
+    <p class="note">
+      🔐 Time-limited link for authorized users.
+    </p>
+
+    <button onclick="link()">
+      🔗 Generate Link
+    </button>
+
+    <p id="linkStatus"></p>
+
+  </div>
+
+</section>
+
+
+<section id="security">
+
+  <h1>Security Features</h1>
+
+  <div class="security">
+
+    <div>✓ End-to-End Encryption</div>
+
+    <div>✓ AES-256 File Encryption</div>
+
+    <div>✓ SHA-256 Integrity Check</div>
+
+    <div>✓ Cloud Object Storage</div>
+
+    <div>✓ Short-Lived Signed URLs</div>
+
+    <div>✓ Access Control & Logs</div>
+
+  </div>
+
+  <h2 class="final">
+    SECURE • PRIVATE • CONTROLLED
+  </h2>
+
+</section>
+
+</main>
+
+<script src="static/app.js"></script>
+
+</body>
+</html>
